@@ -22,7 +22,6 @@ public class GameController : MonoBehaviour
 
     void Start()
     {
-        Screen.fullScreen = !Screen.fullScreen;
         NextSaincle();
     }
 
