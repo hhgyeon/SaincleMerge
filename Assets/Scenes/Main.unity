@@ -157,6 +157,16 @@ MonoBehaviour:
   saincleGroup: {fileID: 518170197}
   effectPrefab: {fileID: 6530068881577027651, guid: f11bffbec8a554ff8b9225a61ee08d06, type: 3}
   effectGroup: {fileID: 1240619598}
+  teams:
+  - {fileID: 21300000, guid: e1ba7ac24ed9743feb1818985497549d, type: 3}
+  - {fileID: 21300000, guid: dd69fa68daf5a49e09355107e59455f4, type: 3}
+  - {fileID: 21300000, guid: 91f409c75c71f4441b12c07be1f41764, type: 3}
+  - {fileID: 21300000, guid: 69efffbfae66e4a1f94652b85c30bb2a, type: 3}
+  - {fileID: 21300000, guid: be8218a424d784f7b8a8add43909ee2c, type: 3}
+  - {fileID: 21300000, guid: e02a3e39ce0bb41fa8d796266184a610, type: 3}
+  - {fileID: 21300000, guid: d158bf55481c347e5895d26b77b6abaa, type: 3}
+  - {fileID: 21300000, guid: 23eb173dc998c48c0b774c3c3998593a, type: 3}
+  teamImage: {fileID: 1884836631}
   scoreText: {fileID: 1082370246}
   scorePanel: {fileID: 916591271}
   scoreNoti: {fileID: 1836789219}
@@ -1235,7 +1245,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 960, y: 1180}
+  m_ReferenceResolution: {x: 1080, y: 2340}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
