@@ -25,6 +25,7 @@ public class GameController : MonoBehaviour
 
     void Start()
     {
+        Screen.SetResolution(1080, 2340, true);
         NextSaincle();
     }
 

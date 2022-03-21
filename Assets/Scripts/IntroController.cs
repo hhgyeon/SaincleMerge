@@ -22,6 +22,11 @@ public class IntroController : MonoBehaviour
     {
 
     }
+    void Awake()
+    {
+
+        Screen.fullScreen = !Screen.fullScreen;
+    }
 
     // Update is called once per frame
     void Update()
