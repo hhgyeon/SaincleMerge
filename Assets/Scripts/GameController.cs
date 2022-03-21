@@ -33,7 +33,7 @@ public class GameController : MonoBehaviour
     {
         Application.targetFrameRate = 60;
         Screen.SetResolution(1080, 2340, true);
-        Screen.fullScreen = !Screen.fullScreen;
+        //Screen.fullScreen = !Screen.fullScreen;
         score = 0;
     }
 
@@ -128,9 +128,9 @@ public class GameController : MonoBehaviour
     void NotiScore()
     {
         int teamIdx = PlayerPrefs.GetInt("team");
-        string nickname = PlayerPrefs.GetString("nickname");
+        //string nickname = PlayerPrefs.GetString("nickname");
         teamImage.sprite = teams[teamIdx];
-        scoreNoti.text = nickname + "님 점수는 " + score + "점 입니다.";
+        scoreNoti.text = "횐님 점수는 " + score + "점 입니다.";
         scorePanel.SetActive(true);
     }
 
