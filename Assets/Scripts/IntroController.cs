@@ -78,13 +78,15 @@ public class IntroController : MonoBehaviour
                 break;
 
         }
-        team.text = "당신은\n" + teamName[teamIdx] + " 팀 입니다.";
+        team.text = nickname.text + "님은\n" + teamName[teamIdx] + " 팀 입니다.";
         teamImage.sprite = teams[teamIdx];
         panel.SetActive(true);
     }
 
     public void GoMain()
     {
+        PlayerPrefs.SetInt("team", teamIdx);
+        PlayerPrefs.SetString("nickname", nickname.text);
         SceneManager.LoadScene("Main");
     }
 

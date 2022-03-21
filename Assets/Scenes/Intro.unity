@@ -335,7 +335,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 960, y: 1180}
+  m_ReferenceResolution: {x: 1080, y: 2340}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -584,7 +584,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: acce4cf50881d41c9895821b29558459, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1624,6 +1624,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: be8218a424d784f7b8a8add43909ee2c, type: 3}
   - {fileID: 21300000, guid: e02a3e39ce0bb41fa8d796266184a610, type: 3}
   - {fileID: 21300000, guid: d158bf55481c347e5895d26b77b6abaa, type: 3}
+  - {fileID: 21300000, guid: 23eb173dc998c48c0b774c3c3998593a, type: 3}
   teamImage: {fileID: 603448306}
   nickname: {fileID: 837474066}
   team: {fileID: 1408239770}

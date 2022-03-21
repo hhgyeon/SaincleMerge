@@ -12,6 +12,9 @@ public class GameController : MonoBehaviour
     public GameObject effectPrefab;
     public Transform effectGroup;
 
+    public Sprite[] teams;
+    public Image teamImage;
+
     public Text scoreText;
     public GameObject scorePanel;
     public Text scoreNoti;
@@ -121,8 +124,10 @@ public class GameController : MonoBehaviour
 
     void NotiScore()
     {
-
-        scoreNoti.text = "님 점수는 " + score + "점 입니다.";
+        int teamIdx = PlayerPrefs.GetInt("team");
+        string nickname = PlayerPrefs.GetString("nickname");
+        teamImage.sprite = teams[teamIdx];
+        scoreNoti.text = nickname + "님 점수는 " + score + "점 입니다.";
         scorePanel.SetActive(true);
     }
 
