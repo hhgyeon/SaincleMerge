@@ -25,7 +25,7 @@ public class IntroController : MonoBehaviour
     void Awake()
     {
 
-        Screen.fullScreen = !Screen.fullScreen;
+        //Screen.fullScreen = !Screen.fullScreen;
     }
 
     // Update is called once per frame
@@ -83,7 +83,7 @@ public class IntroController : MonoBehaviour
                 break;
 
         }
-        team.text = nickname.text + "님은\n" + teamName[teamIdx] + " 팀 입니다.";
+        team.text = "횐님은\n" + teamName[teamIdx] + " 팀 입니다.";
         teamImage.sprite = teams[teamIdx];
         panel.SetActive(true);
     }
@@ -91,7 +91,7 @@ public class IntroController : MonoBehaviour
     public void GoMain()
     {
         PlayerPrefs.SetInt("team", teamIdx);
-        PlayerPrefs.SetString("nickname", nickname.text);
+        //PlayerPrefs.SetString("nickname", nickname.text);
         SceneManager.LoadScene("Main");
     }
 
