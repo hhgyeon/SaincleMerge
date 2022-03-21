@@ -14,6 +14,7 @@ public class GameController : MonoBehaviour
 
     public Sprite[] teams;
     public Image teamImage;
+    public GameObject setPanel;
 
     public Text scoreText;
     public GameObject scorePanel;
@@ -25,13 +26,14 @@ public class GameController : MonoBehaviour
 
     void Start()
     {
-        Screen.SetResolution(1080, 2340, true);
         NextSaincle();
     }
 
     void Awake()
     {
         Application.targetFrameRate = 60;
+        Screen.SetResolution(1080, 2340, true);
+        Screen.fullScreen = !Screen.fullScreen;
         score = 0;
     }
 
@@ -138,4 +140,25 @@ public class GameController : MonoBehaviour
         scorePanel.SetActive(false);
     }
 
+    public void OnExit()
+    {
+        Application.Quit();
+    }
+
+    public void GoIntro()
+    {
+        SceneManager.LoadScene("Intro");
+    }
+
+    public void OnSetClick()
+    {
+        if (setPanel.activeSelf)
+        {
+            setPanel.SetActive(false);
+        }
+        else
+        {
+            setPanel.SetActive(true);
+        }
+    }
 }
