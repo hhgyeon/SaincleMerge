@@ -32,7 +32,7 @@ public class GameController : MonoBehaviour
     void Awake()
     {
         Application.targetFrameRate = 60;
-        Screen.SetResolution(1080, 2340, true);
+        //Screen.SetResolution(1080, 2340, true);
         //Screen.fullScreen = !Screen.fullScreen;
         score = 0;
     }
@@ -161,4 +161,5 @@ public class GameController : MonoBehaviour
             setPanel.SetActive(true);
         }
     }
+
 }

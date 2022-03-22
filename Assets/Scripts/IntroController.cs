@@ -24,7 +24,6 @@ public class IntroController : MonoBehaviour
     }
     void Awake()
     {
-
         //Screen.fullScreen = !Screen.fullScreen;
     }
 
